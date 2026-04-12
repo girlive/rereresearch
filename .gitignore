@@ -1,0 +1,6 @@
+.env
+.env.*
+credentials/
+*.local
+.DS_Store
+.claude/state/
