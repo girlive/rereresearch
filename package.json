@@ -1,0 +1,34 @@
+{
+  "name": "rereresearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "highlights": "node scripts/highlight_raw.mjs",
+    "highlights:all": "node scripts/highlight_raw.mjs --all",
+    "highlights:hourly": "node scripts/highlight_hourly.mjs",
+    "highlights:slack": "node scripts/highlight_raw.mjs --slack",
+    "highlights:serve": "node scripts/serve_highlights.mjs",
+    "x:audit": "node scripts/audit_x_raw.mjs",
+    "x:capture": "scripts/x_capture_once.sh",
+    "x:capture:for-you": "scripts/x_capture_once.sh for_you",
+    "x:capture:search": "scripts/x_capture_once.sh search",
+    "x:capture:search:batch": "scripts/x_capture_search_batch.sh",
+    "test": "npm run highlights:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/girlive/rereresearch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/girlive/rereresearch/issues"
+  },
+  "homepage": "https://github.com/girlive/rereresearch#readme",
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}

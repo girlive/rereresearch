@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.grrb.rereresearch.x-capture</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/grrb/ai-sandbox/rereresearch/scripts/x_capture_daemon.sh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/grrb/ai-sandbox/rereresearch</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/grrb/ai-sandbox/rereresearch/logs/x_capture_launchd.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/grrb/ai-sandbox/rereresearch/logs/x_capture_launchd.err.log</string>
+</dict>
+</plist>
